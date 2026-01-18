@@ -1,5 +1,14 @@
+:root {
+    --primary-header-color: #0C0B10F2;
+    --background-page-color: #01020F;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background-page-color);
 }
