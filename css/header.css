@@ -1,0 +1,115 @@
+:root {
+    --primary-header-color: #0C0B10F2;
+    --background-page-color: #01020F;
+    --secondary-text-color: #9CA3AF;
+    --primary-active-color: #22D3EE;
+    --secondary-active-color: #60A5FA;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1528px;
+    width: 95%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: var(--primary-header-color);
+    border: 0.8px solid #1F2833;
+    width: 100%;
+    padding: 12px 0;
+}
+
+.inner-head {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    justify-content: space-between;
+}
+
+.head-search-box {
+    padding: 12px;
+    display: flex;
+    gap: 10px;
+    border: 1px solid #FFFFFF33;
+    border-radius: 8px;
+    background-color: #000000;
+    width: 500px;
+}
+
+.head-search-box:hover {
+    border: 1px solid var(--primary-active-color);
+    background-color: #ffffff14;
+}
+
+.head-search-box:focus-within {
+    border: #ffffff80;
+    box-shadow: 0 0 0 2px var(--primary-active-color);
+}
+
+.head-search {
+    background-color: transparent;
+    color: var(--secondary-text-color);
+    font-size: 16px;
+    font-weight: 400;
+    width: 100%;
+    outline: none;
+    border: none;
+}
+
+.head-search::placeholder {
+    color: var(--secondary-text-color);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+header nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: var(--secondary-text-color);
+    font-weight: 400;
+    font-size: 14px;
+    text-decoration: none;
+    letter-spacing: 0.35px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+}
+
+nav a:hover {
+    color: var(--secondary-active-color);
+}
+
+header button {
+    width: 90px;
+    height: 36px;
+    background-color: transparent;
+    border: 1px solid var(--primary-active-color);
+    color: var(--primary-active-color);
+    font-weight: 400;
+    font-size: 14px;
+    transition: all 0.2s ease;
+}
+
+header button:hover {
+    background-color: var(--primary-active-color);
+    color: var(--primary-header-color);
+}
+
+header button:active {
+    transform: scale(0.95);
+}
+
+@media screen and (max-width: 1350px) {
+    .head-search-box {
+        width: 400px;
+    }
+}
