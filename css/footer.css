@@ -1,0 +1,213 @@
+:root {
+    --primary-header-color: #0C0B10F2;
+    --background-page-color: #01020F;
+    --secondary-text-color: #9CA3AF;
+    --primary-active-color: #22D3EE;
+    --secondary-active-color: #60A5FA;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: var(--primary-header-color);
+}
+.footer-container{
+    width: 90%;
+    max-width: 1352px;
+    padding: 64px 0 22px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 48.8px;
+}
+.footer-container-top{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    
+}
+.footer-container-top-left-left{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 952px;
+}
+.footer-container-top-left{
+    width: 100%;
+    max-width: 306px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.footer-container-top-left-logo{
+    width: 100%;
+    max-width: 272px;
+    min-height: 56px;
+}
+.footer-container-top-left-text{
+    font-family: 'Alata';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: var(--secondary-text-color);
+    padding: 0 22.5px;
+}
+.footer-container-top-box{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.footer-container-top-box-tittle{
+    font-family: 'Alata';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.7;
+    text-transform: uppercase;
+    color: var(--primary-active-color);
+}
+.footer-container-top-box-text{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.footer-container-top-box-text p{
+    font-family: 'Alata';
+    font-weight: 400;
+    font-size: 12px;
+    line-height:19.5px;
+    letter-spacing: 0%;
+    color: var(--secondary-text-color);
+}
+.footer-container-top-right{
+    width: 100%;
+    max-width: 265px;
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+}
+.footer-container-top-right-text{
+    font-family: 'Alata';
+    font-weight:400;
+    font-size:12px;
+    line-height: 19.5px;
+    color: var(--secondary-text-color);
+}
+.footer-container-top-right-input{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+.footer-container-top-right-input input{
+    width: 100%;
+    max-width: 182px;
+    height: 44px;
+    border: 1.2px solid #00F0FF4D;
+    background-color: transparent;
+    outline: 0;
+    padding-left: 14px;
+    font-family: 'Alata';
+    font-weight:400;
+    font-size: 14.4px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: var(--secondary-text-color);
+}
+.footer-container-top-right-input button{
+    cursor: pointer;
+    width: 100%;
+    max-width: 58px;
+    background-color: var(--primary-active-color);
+    border: 0;
+}
+.footer-container-bottom{
+    width: 100%;
+}
+.footer-container-bottom-container{
+    width: 100%;
+    max-width: 1086px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-container-bottom-container-left{
+    font-family: 'Alata';
+    font-weight: 400;
+    font-size: 12px;
+    line-height:16px;
+    color: var(--secondary-text-color);
+}
+.footer-container-bottom-container-right{
+    display: flex;
+    gap: 16px;
+}
+.footer-container-bottom-container-right p{
+    font-family: 'Alata';
+    font-weight: 400;
+    font-size: 12px;
+}
+@media(max-width: 1024px){
+.none{
+    display: none;
+}
+.footer-container-top{
+    flex-direction: column;
+    gap: 30px;
+}
+.footer-container-top-left-logo{
+    max-width: 247px;
+    min-height: 50px;
+}
+.footer-container-top-left-text{
+    font-size: 16.38px;
+    line-height: 25.48px;
+}
+.footer-container-top-right{
+    width: 100%;
+    max-width: 621px;
+    gap: 7px;
+}
+
+.footer-container-top-left-text{
+    font-size: 11.76px;
+    line-height: 19.11px;
+}
+.footer-container-top-right-input input{
+    max-width: 516px;
+    height: 55px;
+    font-size: 21.17px;
+    padding-left: 22px;
+}
+.footer-container-top-right-input button{
+    max-width: 91px;
+}
+.footer-container-bottom-container-left{
+    font-size: 8.4px;
+    line-height: 11.2px;
+}
+.footer-container-bottom-container-right{
+    font-size: 8.4px;
+    line-height: 11.2px;
+}
+}
+@media(max-width: 767px){
+.footer-container-top-box{
+    display: none;
+}
+.footer-container-bottom-container{
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+}
+}
