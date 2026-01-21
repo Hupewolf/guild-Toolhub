@@ -393,3 +393,85 @@ body {
     display: flex;
     align-items: center;
 }
+
+@media screen and (max-width: 1100px) {
+    .main-right-card {
+        width: calc((100% - 24px) / 2);
+        height: 212px;
+        background-color: var(--primary-back-banner-color);
+        border-radius: 16px;
+        padding: 24px 24px;
+        position: relative;
+        border: 1px solid var(--primary-border-color);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    .main-left {
+        padding: 75px 0;
+    }
+}
+
+@media screen and (max-width: 755px) {
+    .main-right-card {
+        width: 100%;
+        height: 212px;
+        background-color: var(--primary-back-banner-color);
+        border-radius: 16px;
+        padding: 24px 24px;
+        position: relative;
+        border: 1px solid var(--primary-border-color);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .main-left .first-line {
+        width: 4px;
+        height: 2px;
+        background-color: var(--primary-active-color);
+    }
+
+    .main-left-intro .text {
+        font-size: 12px;
+        font-weight: 400px;
+        color: var(--primary-active-color);
+    }
+    .main-left-checkbox {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        font-size: 8px;
+        font-weight: 400;
+        letter-spacing: 0.35;
+        cursor: pointer;
+        color: var(--secondary-text-color);
+    }
+
+    .main-left-checkbox input {
+        display: none;
+    }
+
+    .main-left-checkbox span {
+        width: 12px;
+        height: 12px;
+        background: var(--primary-footer-color);
+        border: 2px solid var(--primary-border-color);
+        display: inline-block;
+    }
+    .badge {
+        padding: 4px 8px;
+        border: 1px solid var(--secondary-active-color);
+        color: var(--secondary-active-color);
+        font-size: 8px;
+        font-weight: 400;
+    }
+    .main-right-head .mainText {
+        font-size: 16px;
+        font-weight: 700;
+        color: var(--primary-text-color);
+        white-space: nowrap;
+    }
+}
