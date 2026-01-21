@@ -220,6 +220,10 @@ header nav button:active {
     display: none;
 }
 
+a {
+    text-decoration: none;
+}
+
 @media screen and (max-width: 1350px) {
     .head-search-box {
         width: 400px;

@@ -55,8 +55,7 @@
 }
 .feedback-top-close{
     cursor: pointer;
-    width: 100%;
-    max-width: 85px;
+    width: 85px;
     height: 35px;
     border: 1.2px solid #00F0FF4D;
     background-color: transparent;
@@ -390,9 +389,6 @@
 .feedback-top-left p{
     font-size: 10px;
 }
-.feedback-top-close{
-    display: none;
-}
 .feedback-bottom{
     gap: 20px;
 }
@@ -415,6 +411,12 @@
     .feedback-bottom{
         flex-direction: column;
         gap: 50px;
+    }
+    .feedback-top-close{
+        width: 35px;
+    }
+    .feedback-top-left h1{
+        font-size: 24px;
     }
     .feedback-bottom-right{
         max-width: none;
