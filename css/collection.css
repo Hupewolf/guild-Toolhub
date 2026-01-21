@@ -27,7 +27,7 @@ body {
     height: calc(100dvh - 70px);
     width: 100%;
     display: flex;
-    background-color: var(--primary-back-banner-color);
+    background-color: var(--primary-footer-color);
     border-bottom: 0.8px solid var(--primary-border-color);
     display: flex;
     justify-content: center;
@@ -35,86 +35,61 @@ body {
 }
 
 .inner-banner {
-    padding: 32px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 48px;
+    gap: 24px;
     max-width: 900px;
     width: 95%;
 }
 
-.banner-text {
+.vault {
+    width: 700px;
+}
+
+/* main box */
+.vault-box {
     display: flex;
     flex-direction: column;
-    text-align: center;
-    gap: 16px;
+    align-items: center;
+    gap: 12px;
 }
 
-.banner-text1 {
+.vault-box h1 {
     font-size: 48px;
-    font-weight: 700;
-    color: var(--primary-text-color);
-}
-
-.banner-text1 span {
+    letter-spacing: 2.4px;
     color: var(--primary-active-color);
+    text-shadow:
+        0 0 8px var(--primary-active-color),
+        0 0 18px var(--primary-active-color);
 }
 
-.banner-text2 {
-    font-size: 18px;
-    font-weight: 400;
-    color: var(--secondary-text-color);
-}
-
-.banner-search-box {
-    padding: 12px;
-    display: flex;
-    gap: 10px;
-    border: 1px solid #FFFFFF33;
-    border-radius: 8px;
-    background-color: #000000;
-    max-width: 832px;
-    width: 100%;
-}
-
-.banner-search-box:hover {
-    border: 1px solid var(--primary-active-color);
-    box-shadow: 0px 0px 12px 0px var(--primary-active-color);
-}
-
-.banner-search-box:focus-within {
-    border: #ffffff80;
-    box-shadow: 0 0 0 2px var(--primary-active-color);
-}
-
-.banner-search {
-    background-color: transparent;
-    color: var(--secondary-text-color);
+.vault-box p {
     font-size: 14px;
+    letter-spacing: 1.6px;
+    color: var(--secondary-text-color);
+}
+
+.vault-stats {
+    display: flex;
+    justify-content: center;
+    gap: 26px;
+}
+
+.banner-stat {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 12px;
     font-weight: 400;
-    width: 100%;
-    outline: none;
-    border: none;
+    color: var(--secondary-text-color);
 }
 
-.banner-search::placeholder {
-    color: #4B5563;
-    font-size: 16px;
-    font-weight: 400;
-}
-
-.banner-search::placeholder::after {
-    content: "...";
-    animation: vui 1.5s infinite;
-}
-
-@keyframes vui {
-    0% { content: ""; }
-    33% { content: "."; }
-    66% { content: ".."; }
-    100% { content: "..."; }
+.banner-stat span {
+    width: 8px;
+    height: 8px;
+    background: var(--primary-active-color);
 }
 
 .line {
@@ -202,10 +177,6 @@ body {
     box-shadow: 0 0 8px var(--primary-active-color);
     background-color: var(--primary-active-color);
 }
-
-
-
-
 
 .main-right {
     background-color: var(--primary-back-main-right-color);
