@@ -1,0 +1,49 @@
+:root {
+    --primary-header-color: #0C0B10F2;
+    --background-page-color: #01020F;
+    --secondary-text-color: #9CA3AF;
+    --primary-active-color: #22D3EE;
+    --secondary-active-color: #60A5FA;
+    --primary-back-banner-color: #0B0C10;
+    --primary-border-color: #1F2833;
+    --primary-text-color: #ffffff;
+    --primary-footer-color: #050505;
+    --primary-back-main-right-color: #0E0E14;
+    --paid-color: #FB923C;
+    --tab-color: #00FF26;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.badge {
+    padding: 4px 10px;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.fremium {
+    border: 1px solid var(--secondary-active-color);
+    color: var(--secondary-active-color);
+}
+
+.paid {
+    border: 1px solid var(--paid-color);
+    color: var(--paid-color);
+}
+
+.free {
+    border: 1px solid var(--primary-active-color);
+    color: var(--primary-active-color);
+}
+
+.tab {
+    padding: 3px 9px;
+    border: 0.8px solid var(--tab-color);
+    color: var(--tab-color);
+    font-weight: 400;
+    font-size: 9.6px;
+}
