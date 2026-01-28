@@ -9,6 +9,8 @@
     --primary-text-color: #ffffff;
     --primary-footer-color: #050505;
     --primary-back-main-right-color: #0E0E14;
+    --paid-color: #FB923C;
+    --tab-color: #00FF26;
 }
 
 
@@ -267,6 +269,26 @@ body {
     justify-content: space-between;
 }
 
+
+.tag-box {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.tag {
+    padding: 3px 9px;
+    border: 0.8px solid var(--tab-color);
+    color: var(--tab-color);
+    font-weight: 400;
+    font-size: 9.6px;
+}
+
+.tag.more {
+    opacity: 0.6;
+}
+
 /* HEART */
 .heart-btn {
     position: absolute;
@@ -327,11 +349,24 @@ body {
 }
 
 .badge {
-    padding: 4px 12px;
-    border: 1px solid var(--secondary-active-color);
-    color: var(--secondary-active-color);
+    padding: 4px 10px;
     font-size: 12px;
     font-weight: 400;
+}
+
+.freemium {
+    border: 1px solid var(--secondary-active-color);
+    color: var(--secondary-active-color);
+}
+
+.paid {
+    border: 1px solid var(--paid-color);
+    color: var(--paid-color);
+}
+
+.free {
+    border: 1px solid var(--primary-active-color);
+    color: var(--primary-active-color);
 }
 
 .stat-box {
