@@ -88,8 +88,16 @@ nav a {
     height: 20px;
 }
 
+.activeA {
+    color: var(--primary-active-color);
+}
+
+.activeA:hover {
+    text-shadow: 4px 4px 4px #00ccff40;
+}
+
 nav a:hover {
-    text-shadow: 2px 2px 5px #fae75b40;
+    text-shadow: 4px 4px 5px #ffe83840;
 }
 
 header nav button {

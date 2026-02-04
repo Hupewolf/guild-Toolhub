@@ -1,3 +1,24 @@
+document.querySelectorAll(".heart-btn").forEach(btn => {
+    let isLiked = false;
+    const heart = btn.querySelector("img");
+
+    btn.onclick = () => {
+        isLiked = !isLiked;
+        if (isLiked) {
+            heart.src = "img/trangchuimg/saveActive.svg";
+            btn.style.borderColor = "var(--primary-active-color)";
+            heart.style.filter = "drop-shadow(0 0 6px var(--primary-active-color))";
+        } else {
+            heart.src = "img/trangchuimg/save.svg";
+            btn.style.borderColor = "var(--primary-border-color)";
+            heart.style.filter = "none";
+        }
+        heart.style.animation = "none";
+        void heart.offsetWidth;
+        heart.style.animation = "pop .4s ease";
+    };
+});
+
 const params = new URLSearchParams(window.location.search);
 const keyword = (params.get("q") || "").toLowerCase();
 document.getElementById("searchTitle").innerHTML =
@@ -8,6 +29,8 @@ function highlight(text, keyword) {
     const regex = new RegExp(`(${keyword})`, "gi");
     return text.replace(regex, `<span class="highlight">$1</span>`);
 }
+
+let found = 0;
 
 cards.forEach(card => {
     const titleEl = card.querySelector(".right-card-text1");
