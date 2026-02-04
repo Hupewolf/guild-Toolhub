@@ -94,12 +94,6 @@ body {
     background: var(--primary-active-color);
 }
 
-.highlight {
-    background: var(--secondary-active-color);
-    color: black;
-    font-weight: bold;
-}
-
 .empty {
     color: #888;
     font-style: italic;

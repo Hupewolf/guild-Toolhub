@@ -24,12 +24,6 @@ const keyword = (params.get("q") || "").toLowerCase();
 document.getElementById("searchTitle").innerHTML =
     `Kết quả cho "<b>${keyword}</b>"`;
 
-function highlight(text, keyword) {
-    if (!keyword) return text;
-    const regex = new RegExp(`(${keyword})`, "gi");
-    return text.replace(regex, `<span class="highlight">$1</span>`);
-}
-
 let found = 0;
 
 cards.forEach(card => {
