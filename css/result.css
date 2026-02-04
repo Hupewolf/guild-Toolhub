@@ -122,7 +122,7 @@ body {
 }
 
 .main-left {
-    padding: 75px 24px 0;
+    padding: 24px 24px 0;
     height: auto;
     background-color: var(--primary-footer-color);
 }
@@ -289,6 +289,11 @@ body {
     justify-content: center;
     cursor: pointer;
     background-color: #00000096;
+}
+
+.heart-btn:hover {
+    background-color: #1f2833e6;
+    border: 1px solid #22d3ee33;
 }
 
 .heart-btn img {
