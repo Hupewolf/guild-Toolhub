@@ -13,10 +13,19 @@
 }
 @import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
 footer{
+    position: relative;
     width: 100%;
     display: flex;
     justify-content: center;
     background-color: var(--primary-header-color);
+}
+footer::after{
+    position: absolute;
+    content: " ";
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, rgba(0, 240, 255, 0) 0%, #00F0FF 50%, rgba(0, 240, 255, 0) 100%);
+
 }
 .footer-container{
     width: 90%;
@@ -106,28 +115,12 @@ footer{
 }
 .footer-container-top-right-input{
     width: 100%;
-    display: flex;
-    gap: 10px;
-}
-.footer-container-top-right-input input{
-    width: 100%;
-    max-width: 182px;
-    height: 44px;
-    border: 1.2px solid #00F0FF4D;
-    background-color: transparent;
-    outline: 0;
-    padding-left: 14px;
-    font-family: 'Alata';
-    font-weight:400;
-    font-size: 14.4px;
-    line-height: 100%;
-    letter-spacing: 0%;
-    color: var(--secondary-text-color);
 }
 .footer-container-top-right-input button{
     cursor: pointer;
     width: 100%;
-    max-width: 58px;
+    max-width: 148px;
+    height: 40px;
     background-color: var(--primary-active-color);
     border: 0;
 }
