@@ -27,7 +27,7 @@ function paginate() {
     });
 
     pageInfo.innerText =
-        `${String(currentPage).padStart(2, '0')} / ${String(totalPages).padStart(2, '0')}`;
+        `${String(currentPage).padStart(2, '0')} của ${String(totalPages).padStart(2, '0')} trang`;
 
     prevBtn.disabled = currentPage === 1;
     nextBtn.disabled = currentPage === totalPages;
