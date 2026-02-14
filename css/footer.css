@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 :root {
     --primary-header-color: #0C0B10F2;
     --background-page-color: #01020F;
@@ -39,14 +40,14 @@ footer::after{
     width: 100%;
     display: flex;
     justify-content: space-between;
-    gap: 20px;
+    gap: 40px;
     
 }
 .footer-container-top-left-left{
     width: 100%;
     display: flex;
     justify-content: space-between;
-    gap: 20px;
+    gap: 40px;
     max-width: 952px;
 }
 .footer-container-top-left{
@@ -87,6 +88,7 @@ footer::after{
     color: var(--primary-active-color);
 }
 .footer-container-top-box-text{
+    max-width: 117px;
     display: flex;
     flex-direction: column;
     gap: 12px;
@@ -123,6 +125,9 @@ footer::after{
     height: 40px;
     background-color: var(--primary-active-color);
     border: 0;
+}
+.footer-container-top-right-input button:hover{
+    background: #00D0DD8C;
 }
 .footer-container-bottom{
     width: 100%;
