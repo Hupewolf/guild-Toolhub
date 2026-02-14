@@ -1,5 +1,5 @@
 const bannerSearch = document.querySelector(".banner-search");
-const baseText = "SEARCH FOR TOOLS";
+const baseText = "TÌM KIẾM CÔNG CỤ";
 let dots = 0;
 
 setInterval(() => {

@@ -432,7 +432,11 @@
     display: flex;
     gap: 12px;
 }
-
+.details-main-right-account-box-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 .details-main-right-account-box-content-tittle{
     font-family: var(--font-main);
     font-weight: 600;
