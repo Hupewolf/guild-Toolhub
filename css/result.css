@@ -22,7 +22,7 @@
 }
 
 body {
-    background-color: var(--background-page-color);
+    background-color: var(--primary-footer-color);
 }
 
 .banner {
@@ -124,7 +124,27 @@ body {
     padding: 24px 24px 0;
     height: auto;
     background-color: var(--primary-footer-color);
+    overflow-y: hidden;
+    height: 100dvh;
 }
+
+.main-left:hover {
+    overflow-y: auto;
+}
+
+.main-left::-webkit-scrollbar {
+    width: 8px;
+}
+
+.main-left::-webkit-scrollbar-thumb {
+    background: #888888;
+    border-radius: 10px;
+}
+
+.main-left::-webkit-scrollbar-thumb:hover {
+    background: #555555;
+}
+
 
 .inner-main-left {
     padding: 12px 14px;
