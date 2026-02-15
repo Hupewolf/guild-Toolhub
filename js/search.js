@@ -9,3 +9,4 @@ function handleSearch(input) {
 }
 document.querySelectorAll(".head-search, .head-search2, .banner-search")
     .forEach(handleSearch);
+
