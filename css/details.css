@@ -31,7 +31,6 @@
 }
 .details-top-left{
     width: 100%;
-    max-width: 486px;
     display: flex;
     gap: 24px;
 }
@@ -271,7 +270,7 @@
     gap: 12px;
 }
 .System-col-tittle{
-    width: 96px;
+    width: 150px;
     font-family: var(--font-dev);
     font-weight: 400;
     font-size: 14px;
